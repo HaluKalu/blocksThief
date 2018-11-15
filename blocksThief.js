@@ -110,5 +110,5 @@ client.get(redKey, (e, lastBlock) => {
 
 client.get(redKey, (e, lastBlock) => {
     console.log('New start. Last:', firstParam ? firstParam : lastBlock)
-    return SNOB(false,firstParam);
+    return SNOB(false,firstParam ? firstParam : lastBlock);
 });
